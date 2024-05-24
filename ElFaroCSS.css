@@ -1,22 +1,22 @@
 /* Estilos generales */
 body {
     font-family: "georgia", times, times new roman, serif;
-    color: #000;
-    text-align: left;
-    background-color: #fff;
+    color: #ffffff;
+    background-color: #2b2b2b;
 }
 
 h1 {
     color: #D0A933;
     text-align: center;
     font-size:60px;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
     padding: 10px 0;
+    -webkit-text-stroke: 2px rgba(0, 0, 0, 0.747);
 }
 
 h2 {
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 40px;
 }
 
@@ -51,15 +51,42 @@ nav ul {
 nav ul li {
     display: inline;
     margin-right: 20px;
+    border: 1px solid rgba(32, 32, 32, 0);
+    padding: 8px;
+    border-radius: 10px;
+    background-color: #fa6e6e;
+    padding-left: 8px;
+    transition: background-color 0.3s ease;
 }
+
+nav ul li :hover{
+    background-color: #D0A933;
+    border: 1px solid rgba(32, 32, 32, 0);
+    padding: 8px;
+    border-radius: 10px;
+}
+
+nav ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
 
 section {
     padding: 20px 0;
 }
 
-/* Estilos específicos para las secciones */
 section h2 {
     font-size: 24px;
+}
+
+.Lateral{ 
+    width: 50%;
+    margin-left: 1100px;
+    margin-top: 100px;
+    top: 285px;
+    display: inline-block;
+    position: absolute;
 }
 
 table {
@@ -74,5 +101,131 @@ table td {
 footer {
     text-align: center;
     padding: 20px 0;
-    background-color: #f4f4f4;
+    border: 1px solid rgba(32, 32, 32, 0);
+    border-radius: 10px;
+    background-color: rgb(32, 32, 32);
+}
+
+.noticia1{
+    display: inline-block;
+    width: 200px;
+}
+
+.noticia2{
+    display: inline-block;
+    width: 200px;
+}
+
+.BttnContacto{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 5px;
+    background-color: #fa6e6e;
+    border-bottom: #fa6e6e;
+    border: 1px solid rgba(32, 32, 32, 0);
+    border-radius: 10px;
+    color: #ffffff;
+    font-family: "georgia", times, times new roman, serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
+}
+
+.BttnContacto:hover{
+    background-color: #D0A933;
+    color: #2b2b2b;
+}
+
+.CContacto {
+    font-size: 16px;
+    color: #ffffff;
+    border: 0;
+    border-radius: 25px;
+    background-color: #D0A933;
+    box-shadow: 0 0 20px rgba(247, 239, 132, 0.4);
+    cursor: pointer;
+    position: fixed;
+    top: 120px;
+    left: 50%;
+    transform: translateX(780%);
+    margin-top: 10px;
+    height: auto;
+}
+
+
+.OcultarT{
+    display: none;
+}
+
+
+.NuevoBody{
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2b2b2b;
+    color: #D0A933;
+}
+
+form{
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    width:340px;
+    background-color: #4d4c4c;
+}
+
+.Inputs{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.h2Contacto{
+    color: #D0A933;
+    font-size: 35px;
+}
+
+label{
+    color: #D0A933;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+input, textarea{
+    padding: 17px 25px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: #edfff0;
+    border: 2px solid #f0faf1;
+    color: #D0A933;
+    outline: none;
+}
+
+input::placeholder, textarea::placeholder{
+    color: #c9cab5;
+}
+
+.BttnEnviar{
+    font-size: 16px;
+    color: #ffffff;
+    border: 0;
+    border-radius: 25px;
+    background-color: #D0A933;
+    box-shadow: 0 0 20px rgba(247, 239, 132, 0.4);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.BttnEnviar:hover{
+    background-color: #fa6e6e;
+}
+
+.ArtRec{
+    display: block;
+    width: 600px;
 }
